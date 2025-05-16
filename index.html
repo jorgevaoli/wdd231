@@ -1,11 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD231 - Jorge Valverde</title>
+    <meta name="description" content="Jorge Luis Valverde Olivares Web Development Portfolio">
+    <meta name="author" content="Jorge Luis Valverde Olivares">
+    <title>WDD 231 | Jorge Luis Valverde Olivares</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
+
 <body>
-    <h1>WDD231 - Jorge Valverde</h1>
+    <header>
+        <img src="images/profile-photo.webp" alt="Foto de Jorge Luis Valverde Olivares">
+        <span>Jorge Luis Valverde Olivares</span>
+        <button id="hamburgerBtn">&#9776;</button>
+    </header>
+
+    <nav>
+        <ul id="primaryNav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="https://www.linkedin.com/in/jorgevaoli/">Chamber</a></li>
+            <li><a href="https://www.linkedin.com/in/jorgevaoli/">Final</a></li>
+            <li><a href="https://www.linkedin.com/in/jorgevaoli/">GitHub Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/jorgevaoli/">LinkedIn</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+
+        <section class="course-work">
+            <h2>Course Work</h2>
+            <ul>
+                <li>Write programs to accomplish meaningful tasks in a variety of domains.</li>
+                <li>Design websites that are visually appealing and effective.</li>
+                <li>Develop dynamic webpages that follow industry standards and best practices.</li>
+                <li>Learn and apply new technology and techniques in future programming.</li>
+            </ul>
+        </section>
+
+        <section class="location">
+            <h2>Lima, Perú</h2>
+            <figure>
+                <img src="images/lima-city.webp" alt="Lima Temple">
+                <figcaption>Lima Temple</figcaption>
+            </figure>
+        </section>
+
+        <section class="certificate">
+            <h2>Web and Computer Programming Certificate</h2>
+
+            <div class="filter-buttons">
+                <button id="allCoursesBtn" class="filter-btn active">All Courses</button>
+                <button id="wddCoursesBtn" class="filter-btn">WDD Courses</button>
+                <button id="cseCoursesBtn" class="filter-btn">CSE Courses</button>
+            </div>
+
+            <p>The total number of course credits listed below is <span id="totalCredits">0</span></p>
+
+            <div id="courses-container" class="courses-grid">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | Jorge Luis Valverde Olivares | Perú</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
+
 </html>

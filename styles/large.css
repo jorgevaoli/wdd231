@@ -1,0 +1,96 @@
+@media only screen and (min-width: 768px) {
+    /* Header Styles */
+    header {
+        padding: 1rem 2rem;
+    }
+    
+    header img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    header span {
+        font-size: 1.5rem;
+    }
+    
+    #hamburgerBtn {
+        display: none;
+    }
+    
+    /* Navigation Styles */
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    nav ul li {
+        flex: 1;
+        text-align: center;
+    }
+    
+    nav ul li a {
+        padding: 1rem;
+        border: none;
+    }
+    
+    /* Main Content Styles */
+    main {
+        padding: 2rem;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    /* Layout for sections */
+    .content-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .course-work,
+    .location {
+        margin-bottom: 0;
+    }
+    
+    .certificate {
+        grid-column: 1 / -1;
+    }
+    
+    /* Filter Buttons */
+    .filter-buttons {
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    .filter-btn {
+        flex: 0 1 200px;
+    }
+    
+    /* Courses Grid */
+    .courses-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    /* More specific adjustments */
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 1.5rem;
+    }
+    
+    h1 {
+        grid-column: 1 / -1;
+    }
+    
+    .certificate {
+        grid-column: 1 / -1;
+        grid-row: 3;
+    }
+}
