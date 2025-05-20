@@ -1,0 +1,110 @@
+[
+  {
+    "name": "Astrid & Gastón",
+    "tagline": "Fine Peruvian Cuisine",
+    "address": "Av. Paz Soldán 290, San Isidro, Lima",
+    "phone": "+51 1 442 2777",
+    "website": "https://www.astridygaston.com",
+    "image": "ag-logo.png",
+    "membership": 3
+  },
+  {
+    "name": "Wong Supermarkets",
+    "tagline": "Premium Grocery Retailer",
+    "address": "Av. 2 de Mayo 1099, San Isidro, Lima",
+    "phone": "+51 1 613 8888",
+    "website": "https://www.wong.pe",
+    "image": "wong-logo.webp",
+    "membership": 3
+  },
+  {
+    "name": "La Rosa Náutica",
+    "tagline": "Oceanfront Restaurant",
+    "address": "Espigón 4, Circuito de Playas, Miraflores, Lima",
+    "phone": "+51 1 445 0149",
+    "website": "https://www.larosanautica.com",
+    "image": "rosa-nautica-logo.png",
+    "membership": 2
+  },
+  {
+    "name": "Graña y Montero",
+    "tagline": "Engineering & Construction",
+    "address": "Av. Paseo de la República 4675, Surquillo, Lima",
+    "phone": "+51 1 213 0444",
+    "website": "https://www.gym.com.pe",
+    "image": "gm-logo.jpg",
+    "membership": 3
+  },
+  {
+    "name": "Montalvo Salon & Spa",
+    "tagline": "Beauty Services",
+    "address": "Av. Benavides 1944, Miraflores, Lima",
+    "phone": "+51 1 447 1485",
+    "website": "https://www.montalvo.pe",
+    "image": "montalvo-logo.png",
+    "membership": 2
+  },
+  {
+    "name": "Rímac Seguros",
+    "tagline": "Insurance Services",
+    "address": "Av. Paseo de la República 3505, San Isidro, Lima",
+    "phone": "+51 1 411 1000",
+    "website": "https://www.rimac.com",
+    "image": "rimac-logo.png",
+    "membership": 2
+  },
+  {
+    "name": "Larcomar",
+    "tagline": "Oceanfront Shopping Center",
+    "address": "Malecón de la Reserva 610, Miraflores, Lima",
+    "phone": "+51 1 625 4343",
+    "website": "https://www.larcomar.com",
+    "image": "larcomar-logo.png",
+    "membership": 1
+  },
+  {
+    "name": "UTEC - Universidad de Ingeniería y Tecnología",
+    "tagline": "Engineering & Technology University",
+    "address": "Jr. Medrano Silva 165, Barranco, Lima",
+    "phone": "+51 1 230 5000",
+    "website": "https://www.utec.edu.pe",
+    "image": "utec-logo.jpg",
+    "membership": 1
+  },
+  {
+    "name": "Pisco Bar",
+    "tagline": "Authentic Peruvian Cocktails",
+    "address": "Av. Petit Thouars 5390, Miraflores, Lima",
+    "phone": "+51 1 447 8554",
+    "website": "https://www.piscobar.pe",
+    "image": "piscobar-logo.png",
+    "membership": 1
+  },
+  {
+    "name": "BCP - Banco de Crédito del Perú",
+    "tagline": "Banking & Financial Services",
+    "address": "Calle Centenario 156, La Molina, Lima",
+    "phone": "+51 1 313 2000",
+    "website": "https://www.viabcp.com",
+    "image": "bcp-logo.png",
+    "membership": 3
+  },
+  {
+    "name": "Clínica Internacional",
+    "tagline": "Healthcare Services",
+    "address": "Av. Guardia Civil 385, San Borja, Lima",
+    "phone": "+51 1 619 6161",
+    "website": "https://www.clinicainternacional.com.pe",
+    "image": "clinica-logo.png",
+    "membership": 2
+  },
+  {
+    "name": "El Comercio",
+    "tagline": "National Newspaper",
+    "address": "Jr. Santa Rosa 300, Lima",
+    "phone": "+51 1 311 6000",
+    "website": "https://www.elcomercio.pe",
+    "image": "el-comercio-logo.webp",
+    "membership": 3
+  }
+]

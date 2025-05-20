@@ -1,0 +1,101 @@
+/* large.css - Media queries for larger screens */
+
+@media screen and (min-width: 768px) {
+
+    /* Header Styles */
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+    }
+
+    .logo-container {
+        margin-bottom: 0;
+    }
+
+    .title-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .title-container p {
+        font-size: 0.9rem;
+    }
+
+    #hamburger-btn {
+        display: none;
+    }
+
+    #primary-nav {
+        display: flex;
+        background-color: transparent;
+        justify-content: flex-end;
+    }
+
+    #primary-nav li {
+        border-bottom: none;
+    }
+
+    #primary-nav a {
+        padding: 0.8rem 1.2rem;
+        color: var(--dark);
+    }
+
+    #primary-nav li.active a {
+        background-color: var(--primary-color);
+        color: var(--white);
+        border-radius: 4px;
+    }
+
+    #primary-nav a:hover {
+        background-color: var(--secondary-color);
+        border-radius: 4px;
+    }
+
+    /* Directory Grid View */
+    .grid-view {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Directory List View */
+    .list-item {
+        grid-template-columns: 2fr 2fr 1fr 1fr;
+        gap: 1rem;
+    }
+
+    /* Footer Styles */
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .footer-title h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    /* Directory Grid View */
+    .grid-view {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Directory List View */
+    .list-item {
+        padding: 1rem 2rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    /* Main Content Styles */
+    main {
+        padding: 2rem;
+    }
+
+    /* Directory Grid View */
+    .grid-view {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

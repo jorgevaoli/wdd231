@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Lima Chamber of Commerce Business Directory - Find local businesses in Lima, Peru">
+    <meta name="author" content="Jorge Luis Valverde Olivares">
+
+    <meta property="og:title" content="Lima Chamber of Commerce - Business Directory">
+    <meta property="og:description"
+        content="Discover businesses in Lima, Peru. Connect with local companies and organizations in our business directory.">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:url" content="https://jorgevaoli.github.io/wdd231/chamber/directory.html">
+
+    <title>Business Directory | Lima Chamber of Commerce</title>
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Lima Chamber of Commerce Logo">
+            <div class="title-container">
+                <h1>Lima</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+        <nav>
+            <button id="hamburger-btn">&#9776;</button>
+            <ul id="primary-nav">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="directory-main">
+        <h2>Business Directory</h2>
+        <div class="directory-controls">
+            <button id="grid-btn" class="view-btn selected">
+                <img src="images/grid-icon.svg" alt="Grid View">
+            </button>
+            <button id="list-btn" class="view-btn">
+                <img src="images/list-icon.svg" alt="List View">
+            </button>
+        </div>
+
+        <div id="directory-container" class="grid-view">
+            <div class="loading">Loading directory data...</div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-title">
+                <h3>Lima Chamber of Commerce</h3>
+                <p>Av. Giuseppe Garibaldi 396</p>
+                <p>Lima, Jesús María 15072</p>
+                <p>info@limachamber.org</p>
+                <p>(+51) 1-463-3434</p>
+            </div>
+
+            <div class="footer-social">
+                <a href="https://www.youtube.com/" target="_blank">
+                    <img src="images/youtube-icon.svg" alt="YouTube">
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                    <img src="images/twitter-icon.svg" alt="Twitter">
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <img src="images/linkedin-icon.svg" alt="LinkedIn">
+                </a>
+            </div>
+            <div class="footer-info">
+                <p>WDD 231 Class Project</p>
+                <p>Jorge Luis Valverde Olivares</p>
+                <p>&copy; <span id="current-year"></span> Lima Chamber of Commerce</p>
+                <p>Last Modification: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
