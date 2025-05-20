@@ -1,8 +1,6 @@
-/* large.css - Media queries for larger screens */
-
 @media screen and (min-width: 768px) {
 
-    /* Header Styles */
+    /* Header*/
     header {
         flex-direction: row;
         justify-content: space-between;
@@ -62,7 +60,7 @@
         gap: 1rem;
     }
 
-    /* Footer Styles */
+    /* Footer */
     .footer-content {
         flex-direction: row;
         justify-content: space-between;
@@ -89,7 +87,7 @@
 
 @media screen and (min-width: 1200px) {
 
-    /* Main Content Styles */
+    /* Main Content */
     main {
         padding: 2rem;
     }
