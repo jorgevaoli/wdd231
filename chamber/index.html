@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Lima Chamber of Commerce - Supporting business growth and development in Lima, Peru">
+    <meta name="author" content="Jorge Luis Valverde Olivares">
+
+    <meta property="og:title" content="Lima Chamber of Commerce - Home">
+    <meta property="og:description"
+        content="Join the Lima Chamber of Commerce and connect with local businesses in Lima, Peru.">
+    <meta property="og:image" content="https://github.com/jorgevaoli/wdd231/blob/main/chamber/images/logo.png">
+    <meta property="og:url" content="https://jorgevaoli.github.io/wdd231/chamber/index.html">
+
+    <title>Lima Chamber of Commerce</title>
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Lima Chamber of Commerce Logo">
+            <div class="title-container">
+                <h1>Lima</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+        <nav>
+            <button id="hamburger-btn">&#9776;</button>
+            <ul id="primary-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="home-main">
+        <section class="hero-section">
+            <div class="hero-content">
+                <img src="images/hero-large.webp" alt="Lima City Skyline" class="hero-image">
+                <div class="hero-text">
+                    <h2>Welcome to Lima Chamber of Commerce</h2>
+                    <p>Connecting businesses and fostering economic growth in Lima</p>
+                    <a href="join.html" class="cta-button">Join Now</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="main-content">
+            <section class="events-section">
+                <h3>Events</h3>
+                <div class="events-content">
+                    <div class="event-item">
+                        <h4>Business Networking Mixer</h4>
+                        <p><strong>Date:</strong> June 15, 2025</p>
+                        <p><strong>Time:</strong> 6:00 PM - 9:00 PM</p>
+                        <p><strong>Location:</strong> Lima Convention Center</p>                        
+                    </div>
+                    <div class="event-item">
+                        <h4>Digital Marketing Workshop</h4>
+                        <p><strong>Date:</strong> July 22, 2025</p>
+                        <p><strong>Time:</strong> 2:00 PM - 5:00 PM</p>
+                        <p><strong>Location:</strong> Chamber Conference Room</p>        
+                    </div>
+                </div>
+            </section>
+
+            <section class="weather-section">
+                <h3>Current Weather</h3>
+                <div class="weather-info">
+                    <div class="current-weather">
+                        <img id="weather-icon" src="" alt="Weather Icon">
+                        <div class="weather-details">
+                            <p class="temperature"><span id="current-temp">--</span>°C</p>
+                            <p class="description" id="weather-desc">Loading...</p>
+                            <p class="feels-like">Feels like: <span id="feels-like">--</span>°C</p>
+                            <p class="humidity">Humidity: <span id="humidity">--</span>%</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="forecast-section">
+                <h3>Weather Forecast</h3>
+                <div class="forecast-content">
+                    <div class="forecast-day">
+                        <p class="day-label">Today:</p>
+                        <p class="day-temp"><span id="today-temp">--</span>°C</p>
+                    </div>
+                    <div class="forecast-day">
+                        <p class="day-label">Tomorrow:</p>
+                        <p class="day-temp"><span id="tomorrow-temp">--</span>°C</p>
+                    </div>
+                    <div class="forecast-day">
+                        <p class="day-label">Day After:</p>
+                        <p class="day-temp"><span id="day-after-temp">--</span>°C</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="spotlight-section">
+            <h3>Member Spotlights</h3>
+            <div id="spotlight-container" class="spotlight-grid">
+                <div class="loading">Loading member spotlights...</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-title">
+                <h3>Lima Chamber of Commerce</h3>
+                <p>Av. Giuseppe Garibaldi 396</p>
+                <p>Lima, Jesús María 15072</p>
+                <p>info@limachamber.org</p>
+                <p>(+51) 1-463-3434</p>
+            </div>
+
+            <div class="footer-social">
+                <a href="https://www.youtube.com/" target="_blank">
+                    <img src="images/youtube-icon.svg" alt="YouTube">
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                    <img src="images/twitter-icon.svg" alt="Twitter">
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <img src="images/linkedin-icon.svg" alt="LinkedIn">
+                </a>
+            </div>
+            <div class="footer-info">
+                <p>WDD 231 Class Project</p>
+                <p>Jorge Luis Valverde Olivares</p>
+                <p>&copy; <span id="current-year"></span> Lima Chamber of Commerce</p>
+                <p>Last Modification: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

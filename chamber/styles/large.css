@@ -70,6 +70,77 @@
     .footer-title h3 {
         font-size: 1.2rem;
     }
+    /* Hero Section */
+    .hero-image {
+        height: 300px;
+    }
+
+    .hero-text h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero-text p {
+        font-size: 1.2rem;
+    }
+
+    /* Main Content Grid - Desktop Layout */
+    .main-content {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+            "events weather forecast";
+    }
+
+    .events-section {
+        grid-area: events;
+    }
+
+    .weather-section {
+        grid-area: weather;
+    }
+
+    .forecast-section {
+        grid-area: forecast;
+    }
+
+    /* Events Section */
+    .events-content {
+        gap: 1.5rem;
+    }
+
+    /* Weather adjustments */
+    .current-weather {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .weather-details .temperature {
+        font-size: 2.5rem;
+    }
+
+    /* Forecast adjustments */
+    .forecast-content {
+        gap: 1rem;
+    }
+
+    .forecast-day {
+        padding: 1rem;
+    }
+
+    /* Spotlight Grid - Desktop */
+    .spotlight-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .spotlight-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .spotlight-header img {
+        width: 80px;
+        height: 80px;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -82,6 +153,28 @@
     /* Directory List View */
     .list-item {
         padding: 1rem 2rem;
+    }
+    /* Hero Image */
+    .hero-image {
+        height: 350px;
+    }
+
+    .hero-text h2 {
+        font-size: 3rem;
+    }
+
+    /* Spotlight cards get more spacing */
+    .spotlight-grid {
+        gap: 2.5rem;
+    }
+
+    .spotlight-card {
+        transition: transform 0.3s;
+    }
+
+    .spotlight-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     }
 }
 
