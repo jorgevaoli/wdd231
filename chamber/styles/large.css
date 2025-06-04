@@ -70,6 +70,7 @@
     .footer-title h3 {
         font-size: 1.2rem;
     }
+
     /* Hero Section */
     .hero-image {
         height: 300px;
@@ -86,7 +87,7 @@
     /* Main Content Grid - Desktop Layout */
     .main-content {
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: 
+        grid-template-areas:
             "events weather forecast";
     }
 
@@ -154,6 +155,7 @@
     .list-item {
         padding: 1rem 2rem;
     }
+
     /* Hero Image */
     .hero-image {
         height: 350px;
@@ -188,5 +190,79 @@
     /* Directory Grid View */
     .grid-view {
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ====================
+   LARGE SCREEN STYLES 
+   ==================== */
+
+@media screen and (min-width: 768px) {
+
+    /* Join Page Layout */
+    .join-container {
+        grid-template-columns: 2fr 1fr;
+        gap: 3rem;
+        align-items: start;
+    }
+
+    /* Form adjustments */
+    .membership-form {
+        gap: 1.5rem;
+    }
+
+    /* Membership Cards Grid */
+    .membership-cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    /* Modal adjustments */
+    .modal-content {
+        margin: 10% auto;
+        width: 70%;
+        max-width: 600px;
+    }
+
+    /* Thank You Page */
+    .thankyou-content {
+        padding: 3rem;
+    }
+
+    .detail-item {
+        flex-direction: row;
+    }
+
+    .action-buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    /* Join Page */
+    .join-main {
+        padding: 2rem;
+    }
+
+    .form-section,
+    .membership-levels {
+        padding: 2.5rem;
+    }
+
+    /* Membership Cards */
+    .membership-cards {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .membership-card {
+        padding: 2.5rem;
+    }
+
+    /* Thank You Page */
+    .thankyou-main {
+        padding: 2rem;
     }
 }

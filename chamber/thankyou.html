@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thank you for your membership application to the Lima Chamber of Commerce">
+    <meta name="author" content="Jorge Luis Valverde Olivares">
+
+    <title>Thank You - Lima Chamber of Commerce</title>
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Lima Chamber of Commerce Logo">
+            <div class="title-container">
+                <h1>Lima</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+        <nav>
+            <button id="hamburger-btn">&#9776;</button>
+            <ul id="primary-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="thankyou-main">
+        <section class="thankyou-section">
+            <div class="thankyou-content">
+                <h2>Thank You for Your Application!</h2>
+                <p class="gratitude-message">
+                    We appreciate your interest in joining the Lima Chamber of Commerce.
+                    Your membership application has been successfully submitted and will be
+                    reviewed by our team within 2-3 business days.
+                </p>
+
+                <div class="application-summary">
+                    <h3>Application Summary</h3>
+                    <div class="summary-details">
+                        <div class="detail-item">
+                            <strong>First Name:</strong>
+                            <span id="display-firstName">--</span>
+                        </div>
+                        <div class="detail-item">
+                            <strong>Last Name:</strong>
+                            <span id="display-lastName">--</span>
+                        </div>
+                        <div class="detail-item">
+                            <strong>Email:</strong>
+                            <span id="display-email">--</span>
+                        </div>
+                        <div class="detail-item">
+                            <strong>Mobile Phone:</strong>
+                            <span id="display-mobile">--</span>
+                        </div>
+                        <div class="detail-item">
+                            <strong>Business/Organization:</strong>
+                            <span id="display-organization">--</span>
+                        </div>
+                        <div class="detail-item">
+                            <strong>Application Date:</strong>
+                            <span id="display-timestamp">--</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="next-steps">
+                    <h3>What's Next?</h3>
+                    <ul>
+                        <li>Our membership team will review your application</li>
+                        <li>You will receive a confirmation email within 24 hours</li>
+                        <li>A member of our team will contact you to discuss membership benefits</li>
+                        <li>Once approved, you'll receive your welcome package and member resources</li>
+                    </ul>
+                </div>
+
+                <div class="contact-info">
+                    <h3>Questions?</h3>
+                    <p>If you have any questions about your application or membership, please contact us:</p>
+                    <p><strong>Email:</strong> membership@limachamber.org</p>
+                    <p><strong>Phone:</strong> (+51) 1-463-3434</p>
+                </div>
+
+                <div class="action-buttons">
+                    <a href="index.html" class="btn-primary">Return to Home</a>
+                    <a href="directory.html" class="btn-secondary">Browse Directory</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-title">
+                <h3>Lima Chamber of Commerce</h3>
+                <p>Av. Giuseppe Garibaldi 396</p>
+                <p>Lima, Jesús María 15072</p>
+                <p>info@limachamber.org</p>
+                <p>(+51) 1-463-3434</p>
+            </div>
+
+            <div class="footer-social">
+                <a href="https://www.youtube.com/" target="_blank">
+                    <img src="images/youtube-icon.svg" alt="YouTube">
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                    <img src="images/twitter-icon.svg" alt="Twitter">
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <img src="images/linkedin-icon.svg" alt="LinkedIn">
+                </a>
+            </div>
+            <div class="footer-info">
+                <p>WDD 231 Class Project</p>
+                <p>Jorge Luis Valverde Olivares</p>
+                <p>&copy; <span id="current-year"></span> Lima Chamber of Commerce</p>
+                <p>Last Modification: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

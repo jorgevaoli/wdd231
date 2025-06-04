@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Join the Lima Chamber of Commerce - Apply for membership and grow your business in Lima, Peru">
+    <meta name="author" content="Jorge Luis Valverde Olivares">
+
+    <meta property="og:title" content="Lima Chamber of Commerce - Join Us">
+    <meta property="og:description"
+        content="Apply for membership with the Lima Chamber of Commerce and connect with local businesses in Lima, Peru.">
+    <meta property="og:image" content="https://github.com/jorgevaoli/wdd231/blob/main/chamber/images/logo.png">
+    <meta property="og:url" content="https://jorgevaoli.github.io/wdd231/chamber/join.html">
+
+    <title>Join - Lima Chamber of Commerce</title>
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Lima Chamber of Commerce Logo">
+            <div class="title-container">
+                <h1>Lima</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+        <nav>
+            <button id="hamburger-btn">&#9776;</button>
+            <ul id="primary-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li class="active"><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="join-main">
+        <div class="join-container">
+            <section class="form-section">
+                <h2>Membership Application Form</h2>
+                <form action="thankyou.html" method="get" class="membership-form">
+                    <label for="first-name">
+                        First Name *
+                        <input type="text" id="first-name" name="firstName" title="Enter your first name"
+                            autocomplete="given-name" required>
+                    </label>
+
+                    <label for="last-name">
+                        Last Name *
+                        <input type="text" id="last-name" name="lastName" title="Enter your last name"
+                            autocomplete="family-name" required>
+                    </label>
+
+                    <label for="org-title">
+                        Current Position/Title
+                        <input type="text" id="org-title" name="orgTitle" title="Enter your current position/title"
+                            autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}"
+                            placeholder="Minimum 7 characters">
+                    </label>
+
+                    <label for="email">
+                        Email Address *
+                        <input type="email" id="email" name="email" title="Enter your email address"
+                            autocomplete="email" placeholder="example@email.com" required>
+                    </label>
+
+                    <label for="mobile">
+                        Mobile Phone *
+                        <input type="tel" id="mobile" name="mobile" title="Enter your mobile phone number"
+                            autocomplete="tel" required>
+                    </label>
+
+                    <label for="organization">
+                        Business/Organization Name *
+                        <input type="text" id="organization" name="organization"
+                            title="Enter your business or organization name" autocomplete="organization" required>
+                    </label>
+
+                    <fieldset class="membership-level">
+                        <legend>Membership Level</legend>
+                        <label for="np-membership">
+                            <input type="radio" id="np-membership" name="membershipLevel" value="NP Membership">
+                            NP Membership (Non-profit Organization - No fee)
+                        </label>
+                        <label for="bronze-membership">
+                            <input type="radio" id="bronze-membership" name="membershipLevel" value="Bronze Membership">
+                            Bronze Membership
+                        </label>
+                        <label for="silver-membership">
+                            <input type="radio" id="silver-membership" name="membershipLevel" value="Silver Membership">
+                            Silver Membership
+                        </label>
+                        <label for="gold-membership">
+                            <input type="radio" id="gold-membership" name="membershipLevel" value="Gold Membership">
+                            Gold Membership
+                        </label>
+                    </fieldset>
+
+                    <label for="description">
+                        Business/Organization Description
+                        <textarea id="description" name="description" title="Describe your business or organization"
+                            rows="4" placeholder="Tell us about your business or organization..."></textarea>
+                    </label>
+
+                    <input type="hidden" id="timestamp" name="timestamp">
+
+                    <input type="submit" value="Submit Application" class="submit-btn">
+                </form>
+            </section>
+
+            <section class="membership-levels">
+                <h2>Membership Levels</h2>
+                <div class="membership-cards">
+                    <div class="membership-card np-card">
+                        <h3>Non Profit Membership Level</h3>
+                        <button type="button" class="learn-more-btn" data-modal="np-modal">Learn More</button>
+                    </div>
+
+                    <div class="membership-card bronze-card">
+                        <h3>Bronze Membership Level</h3>
+                        <button type="button" class="learn-more-btn" data-modal="bronze-modal">Learn More</button>
+                    </div>
+
+                    <div class="membership-card silver-card">
+                        <h3>Silver Membership Level</h3>
+                        <button type="button" class="learn-more-btn" data-modal="silver-modal">Learn More</button>
+                    </div>
+
+                    <div class="membership-card gold-card">
+                        <h3>Gold Membership Level</h3>
+                        <button type="button" class="learn-more-btn" data-modal="gold-modal">Learn More</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Modals -->
+        <div id="np-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Non Profit Membership</h3>
+                <p><strong>Cost:</strong> Free</p>
+                <h4>Benefits:</h4>
+                <ul>
+                    <li>Basic directory listing</li>
+                    <li>Access to networking events</li>
+                    <li>Monthly newsletter</li>
+                    <li>Community resource access</li>
+                    <li>Volunteer opportunities</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="bronze-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Bronze Membership</h3>
+                <p><strong>Cost:</strong> $200/year</p>
+                <h4>Benefits:</h4>
+                <ul>
+                    <li>Enhanced directory listing</li>
+                    <li>Access to all networking events</li>
+                    <li>Monthly newsletter and business updates</li>
+                    <li>10% discount on chamber events</li>
+                    <li>Basic business consultation services</li>
+                    <li>Access to member-only workshops</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="silver-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Silver Membership</h3>
+                <p><strong>Cost:</strong> $500/year</p>
+                <h4>Benefits:</h4>
+                <ul>
+                    <li>Premium directory listing with logo</li>
+                    <li>Priority access to networking events</li>
+                    <li>Bi-weekly newsletter and market insights</li>
+                    <li>25% discount on chamber events</li>
+                    <li>Advanced business consultation services</li>
+                    <li>Quarterly spotlight feature opportunity</li>
+                    <li>Access to business referral network</li>
+                    <li>Free business training seminars</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="gold-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Gold Membership</h3>
+                <p><strong>Cost:</strong> $1,000/year</p>
+                <h4>Benefits:</h4>
+                <ul>
+                    <li>Premium directory listing with enhanced profile</li>
+                    <li>VIP access to all events and exclusive receptions</li>
+                    <li>Weekly newsletter and premium market reports</li>
+                    <li>50% discount on chamber events</li>
+                    <li>Personalized business consultation services</li>
+                    <li>Monthly spotlight feature on homepage</li>
+                    <li>Priority business referral placement</li>
+                    <li>Complimentary business training and seminars</li>
+                    <li>Annual business awards recognition eligibility</li>
+                    <li>Direct access to chamber leadership</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-title">
+                <h3>Lima Chamber of Commerce</h3>
+                <p>Av. Giuseppe Garibaldi 396</p>
+                <p>Lima, Jesús María 15072</p>
+                <p>info@limachamber.org</p>
+                <p>(+51) 1-463-3434</p>
+            </div>
+
+            <div class="footer-social">
+                <a href="https://www.youtube.com/" target="_blank">
+                    <img src="images/youtube-icon.svg" alt="YouTube">
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                    <img src="images/twitter-icon.svg" alt="Twitter">
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <img src="images/linkedin-icon.svg" alt="LinkedIn">
+                </a>
+            </div>
+            <div class="footer-info">
+                <p>WDD 231 Class Project</p>
+                <p>Jorge Luis Valverde Olivares</p>
+                <p>&copy; <span id="current-year"></span> Lima Chamber of Commerce</p>
+                <p>Last Modification: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
