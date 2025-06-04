@@ -648,7 +648,7 @@ footer {
 }
 
 .membership-form input:invalid {
-    border-color: #ff0000;
+    border-color: var(--secondary-color);
 }
 
 .membership-form textarea {
