@@ -1,0 +1,60 @@
+{
+    "attractions": [
+        {
+            "id": 1,
+            "name": "Historic Center of Lima",
+            "address": "Plaza de Armas, Lima 15001, Peru",
+            "description": "The UNESCO World Heritage Historic Center of Lima showcases colonial architecture with the Government Palace, Cathedral of Lima, and Archbishop's Palace. This area represents the heart of Spanish colonial power in South America.",
+            "image": "images/centrohistorico.webp"
+        },
+        {
+            "id": 2,
+            "name": "Miraflores District",
+            "address": "Miraflores, Lima 15074, Peru",
+            "description": "Modern upscale district known for its cliff-top parks overlooking the Pacific Ocean, shopping centers, restaurants, and vibrant nightlife. Home to the famous Larcomar shopping center and beautiful coastal views.",
+            "image": "images/miraflores.webp"
+        },
+        {
+            "id": 3,
+            "name": "Larco Museum",
+            "address": "Av. Simón Bolívar 1515, Pueblo Libre 15084, Peru",
+            "description": "World-renowned museum housing the finest collection of pre-Columbian art. Features over 45,000 archaeological pieces including ceramics, textiles, and gold artifacts from ancient Peruvian civilizations.",
+            "image": "images/museolarco.webp"
+        },
+        {
+            "id": 4,
+            "name": "Barranco District",
+            "address": "Barranco, Lima 15063, Peru",
+            "description": "Lima's bohemian quarter filled with colorful colonial mansions, art galleries, and trendy bars. Known for its romantic Bridge of Sighs and vibrant street art scene that attracts artists and visitors alike.",
+            "image": "images/barranco.webp"
+        },
+        {
+            "id": 5,
+            "name": "San Lorenzo Island",
+            "address": "San Lorenzo Island, Callao, Peru",
+            "description": "The largest island in the Lima Bay, rich in guano deposits and marine wildlife. Offers boat tours with opportunities to see sea lions, penguins, and various seabirds in their natural habitat.",
+            "image": "images/sanlorenzo.webp"
+        },
+        {
+            "id": 6,
+            "name": "Central Market",
+            "address": "Jr. Ucayali 300, Lima 15001, Peru",
+            "description": "Bustling traditional market offering fresh produce, local ingredients, and authentic Peruvian street food. A culinary adventure where visitors can experience the flavors and aromas of Lima's food culture.",
+            "image": "images/mercadocentral.webp"
+        },
+        {
+            "id": 7,
+            "name": "Pachacamac",
+            "address": "Pachacamac District, Lima, Peru",
+            "description": "Ancient ceremonial center dating back over 1,500 years, featuring pyramids and temples of various pre-Columbian cultures. Offers insight into Peru's rich archaeological heritage with guided tours and museum exhibits.",
+            "image": "images/pachacamac.webp"
+        },
+        {
+            "id": 8,
+            "name": "Costa Verde",
+            "address": "Costa Verde, Miraflores - Chorrillos, Lima, Peru",
+            "description": "Scenic coastal highway offering spectacular Pacific Ocean views, beaches, and recreational areas. Popular for surfing, jogging, cycling, and enjoying Lima's beautiful coastline with restaurants and beach clubs.",
+            "image": "images/costaverde.webp"
+        }
+    ]
+}

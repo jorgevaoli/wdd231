@@ -1043,3 +1043,242 @@ footer {
     border-color: #e8890f;
     transform: translateY(-2px);
 }
+
+/* ======================
+   DISCOVER PAGE STYLES 
+   ====================== */
+
+/* Discover Main Layout */
+.discover-main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Discover Hero Section */
+.discover-hero {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 2rem 1rem;
+    background: var(--primary-color);
+    color: var(--white);
+    border-radius: 8px;
+}
+
+.discover-hero h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.discover-hero p {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* Discover Container */
+.discover-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+/* Attractions Grid - Mobile Layout */
+.attractions-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    grid-template-areas:
+        "area1"
+        "area2"
+        "area3"
+        "area4"
+        "area5"
+        "area6"
+        "area7"
+        "area8";
+}
+
+/* Attraction Card Styles */
+.attraction-card {
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 1px solid var(--light-bg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.attraction-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.attraction-card h2 {
+    color: var(--primary-color);
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
+    margin: 0;
+    font-size: 1.3rem;
+    border-bottom: 2px solid var(--light-bg);
+}
+
+.attraction-card figure {
+    margin: 0;
+    padding: 0;
+}
+
+.attraction-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.attraction-card address {
+    padding: 1rem 1.5rem 0.5rem 1.5rem;
+    font-style: italic;
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.attraction-card p {
+    padding: 0.5rem 1.5rem;
+    color: var(--dark);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.attraction-card .learn-more-btn {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    margin: 1rem 1.5rem 1.5rem 1.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 0.9rem;
+}
+
+.attraction-card .learn-more-btn:hover {
+    background-color: #1e4cc9;
+    transform: scale(1.05);
+}
+
+/* Sidebar Styles */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Visit Message */
+.visit-message {
+    background-color: var(--light-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color);
+    text-align: center;
+}
+
+.visit-message h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.visit-message p {
+    color: var(--dark);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Lima Facts */
+.lima-facts {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--light-bg);
+}
+
+.lima-facts h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.lima-facts ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lima-facts li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--light-bg);
+    color: var(--dark);
+    font-size: 0.9rem;
+}
+
+.lima-facts li:last-child {
+    border-bottom: none;
+}
+
+.lima-facts li:before {
+    content: "✓ ";
+    color: var(--secondary-color);
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+/* Nicknames Widget */
+.nicknames-widget {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--light-bg);
+    text-align: center;
+}
+
+.nicknames-widget h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.nicknames-widget p {
+    color: var(--dark);
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.nicknames-widget p:last-child {
+    margin-bottom: 0;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+/* Loading State */
+.attractions-grid .loading {
+    grid-area: area1;
+    text-align: center;
+    padding: 3rem 1rem;
+    font-style: italic;
+    color: var(--dark);
+    background-color: var(--light-bg);
+    border-radius: 8px;
+}
+
+/* Error State */
+.error {
+    text-align: center;
+    padding: 2rem;
+    color: var(--secondary-color);
+    background-color: var(--light-bg);
+    border-radius: 8px;
+    border-left: 4px solid var(--secondary-color);
+}

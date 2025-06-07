@@ -266,3 +266,180 @@
         padding: 2rem;
     }
 }
+
+/* ===============================
+   DISCOVER PAGE RESPONSIVE STYLES 
+   =============================== */
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+    /* Medium Screen Layout */
+
+    /* Discover Container - Medium */
+    .discover-container {
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+    }
+
+    /* Attractions Grid - Medium Layout */
+    .attractions-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "area1 area2"
+            "area3 area4"
+            "area5 area6"
+            "area7 area8";
+        gap: 1.5rem;
+    }
+
+    /* Discover Hero adjustments */
+    .discover-hero {
+        padding: 3rem 2rem;
+    }
+
+    .discover-hero h2 {
+        font-size: 2.2rem;
+    }
+
+    .discover-hero p {
+        font-size: 1.1rem;
+    }
+
+    /* Attraction cards hover effects for medium screens */
+    .attraction-card img {
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .attraction-card:hover img {
+        transform: scale(1.05);
+        filter: brightness(1.1);
+    }
+
+    /* Sidebar adjustments */
+    .sidebar {
+        align-self: start;
+        position: sticky;
+        top: 1rem;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    /* Large Screen Layout */
+
+    /* Discover Main */
+    .discover-main {
+        padding: 2rem;
+    }
+
+    /* Discover Container - Large */
+    .discover-container {
+        grid-template-columns: 3fr 1fr;
+        gap: 3rem;
+    }
+
+    /* Attractions Grid - Large Layout */
+    .attractions-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "area1 area2"
+            "area3 area4"
+            "area5 area6"
+            "area7 area8";
+        gap: 2rem;
+    }
+
+    .attractions-grid>div:nth-child(8) figure {
+        grid-column: 1;
+        grid-row: 1 / -1;
+    }
+
+    .attractions-grid>div:nth-child(8) h2,
+    .attractions-grid>div:nth-child(8) address,
+    .attractions-grid>div:nth-child(8) p,
+    .attractions-grid>div:nth-child(8) .learn-more-btn {
+        grid-column: 2;
+    }
+
+    /* Discover Hero adjustments */
+    .discover-hero {
+        padding: 4rem 3rem;
+    }
+
+    .discover-hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .discover-hero p {
+        font-size: 1.2rem;
+    }
+
+    /* Enhanced hover effects for large screens */
+    .attraction-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .attraction-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .attraction-card img {
+        transition: transform 0.4s ease, filter 0.4s ease;
+    }
+
+    .attraction-card:hover img {
+        transform: scale(1.08);
+        filter: brightness(1.15) contrast(1.1);
+    }
+
+    /* Attraction card content adjustments */
+    .attraction-card h2 {
+        font-size: 1.4rem;
+    }
+
+    .attraction-card p {
+        font-size: 1rem;
+    }
+
+    /* Sidebar enhancements */
+    .sidebar {
+        align-self: start;
+        position: sticky;
+        top: 2rem;
+    }
+
+    .lima-facts,
+    .nicknames-widget,
+    .visit-message {
+        transition: transform 0.3s ease;
+    }
+
+    .lima-facts:hover,
+    .nicknames-widget:hover,
+    .visit-message:hover {
+        transform: translateY(-2px);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    /* Extra Large Screen Layout */
+
+    /* Attractions Grid - Extra Large Layout */
+    .attractions-grid {
+        gap: 2.5rem;
+    }
+
+    /* Enhanced card spacing */
+    .attraction-card {
+        margin-bottom: 0.5rem;
+    }
+
+    /* Improved typography */
+    .attraction-card h2 {
+        font-size: 1.5rem;
+    }
+
+    .attraction-card p {
+        font-size: 1.05rem;
+        line-height: 1.7;
+    }
+}
