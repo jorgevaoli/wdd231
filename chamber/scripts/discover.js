@@ -44,7 +44,7 @@ function displayAttractions(attractions) {
 
 // Learn more button functionality
 function learnMore(attractionName) {
-    alert(`More information about ${attractionName} would be displayed here. This could link to a detailed page or open a modal with additional content.`);
+    alert(`More information about ${attractionName} will be displayed here.`);
 }
 
 // Visit tracking functionality
