@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contact Azzelera for professional web design services. Get in touch via email, phone, or WhatsApp for your website project consultation.">
+    <meta name="author" content="Azzelera Web Solutions">
+    <meta name="keywords"
+        content="contact web designer, website consultation, web design quote, small business websites">
+
+    <meta property="og:title" content="Contact Us - Azzelera Web Design">
+    <meta property="og:description" content="Get in touch with Azzelera for professional web design services. Free consultation available.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://azzelera.com/contact.html">
+    <meta property="og:image" content="logo-azzelera.webp">
+
+    <title>Contact Us - Azzelera Web Design Services</title>
+    <link rel="icon" href="favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script type="module" src="scripts/contact.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="images/logo-azzelera.webp" alt="Azzelera" class="logo-image">
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pricing.html" class="nav-link">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>Ready to start your project? Get in touch with us today</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-form-section">
+                        <h2>Request a Quote</h2>
+                        <form id="contact-form" action="form-response.html" method="GET">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="company">Company Name</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="service">Service Interested In</label>
+                                <select id="service" name="service">
+                                    <option value="">Select a service</option>
+                                    <option value="web-design">Custom Website Design</option>
+                                    <option value="ecommerce">E-commerce Solutions</option>
+                                    <option value="maintenance">Website Maintenance</option>
+                                    <option value="starter">Starter Package</option>
+                                    <option value="professional">Professional Package</option>
+                                    <option value="enterprise">Enterprise Package</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="budget">Project Budget</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Select budget range</option>
+                                    <option value="under-300">Under $300</option>
+                                    <option value="300-500">$300 - $500</option>
+                                    <option value="500-1000">$500 - $1,000</option>
+                                    <option value="over-1000">Over $1,000</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="timeline">Project Timeline</label>
+                                <select id="timeline" name="timeline">
+                                    <option value="">Select timeline</option>
+                                    <option value="asap">As soon as possible</option>
+                                    <option value="1-month">Within a month</option>
+                                    <option value="2-3-months">2-3 months</option>
+                                    <option value="flexible">Flexible</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Project Details *</label>
+                                <textarea id="message" name="message" rows="5"
+                                    placeholder="Tell us about your project, goals, and any specific requirements..."
+                                    required></textarea>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                                <label for="newsletter">Subscribe to our newsletter for web design tips and
+                                    updates</label>
+                            </div>
+
+                            <button type="submit" class="submit-button">Submit</button>
+                        </form>
+                    </div>
+
+                    <div class="contact-methods">
+                        <h2>Get In Touch</h2>
+                        <p>We're here to help you accelerate your business online. Choose your preferred way to contact
+                            us:</p>
+                        <div class="contact-grid" id="contact-methods-container">
+                            <!-- Contact methods will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="images/logo-white.webp" alt="Azzelera" class="footer-logo">
+                    <p>Accelerating small businesses online with professional web solutions.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div id="contact-info">
+                        <!-- Contact information will be loaded here -->
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Azzelera. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>    
+</body>
+
+</html>

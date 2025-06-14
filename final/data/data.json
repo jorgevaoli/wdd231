@@ -1,0 +1,363 @@
+{
+    "services": [
+        {
+            "id": "web-design",
+            "title": "Custom Website Design",
+            "description": "Create stunning, unique designs that reflect your brand identity and engage your target audience.",
+            "icon": "🎨",
+            "features": [
+                "Custom Design",
+                "Brand Integration",
+                "User Experience Focus",
+                "Visual Appeal"
+            ],
+            "price": {
+                "amount": 199,
+                "currency": "USD",
+                "display": "Starting at $199"
+            },
+            "duration": "1-2 weeks"
+        },
+        {
+            "id": "ecommerce",
+            "title": "E-commerce Solutions",
+            "description": "Launch your online store with secure payment processing and inventory management.",
+            "icon": "🛒",
+            "features": [
+                "Payment Integration",
+                "Inventory Management",
+                "Order Tracking",
+                "Security Features"
+            ],
+            "price": {
+                "amount": 399,
+                "currency": "USD",
+                "display": "Starting at $399"
+            },
+            "duration": "2-4 weeks"
+        },
+        {
+            "id": "website-maintenance",
+            "title": "Website Maintenance",
+            "description": "Keep your website secure, updated, and performing at its best with ongoing support.",
+            "icon": "🔧",
+            "features": [
+                "Regular Updates",
+                "Security Monitoring",
+                "Backup Services",
+                "Technical Support"
+            ],
+            "price": {
+                "amount": 49,
+                "currency": "USD",
+                "display": "Starting at $49/month",
+                "recurring": "monthly"
+            },
+            "duration": "Ongoing"
+        }
+    ],
+    "projects": [
+        {
+            "id": "logistic-website",
+            "title": "Global Logistics",
+            "description": "A modern website for a local company featuring online order tracking and a complete detail of services provided.",
+            "image": "images/gl.webp",
+            "technologies": [
+                "HTML5",
+                "CSS3",
+                "JavaScript",
+                "PHP"
+            ],
+            "url": "https://globallogistics.pe/",
+            "completionDate": "2023-01-15"
+        },
+        {
+            "id": "baby-store",
+            "title": "Eco Baby",
+            "description": "Modern ecommerce website with complete platform to perform orders online.",
+            "image": "images/eco.webp",
+            "technologies": [
+                "HTML5",
+                "CSS3",
+                "JavaScript",
+                "PHP"
+            ],
+            "url": "https://clubecobaby.com/",
+            "completionDate": "2024-07-12"
+        },
+        {
+            "id": "expert-website",
+            "title": "Import Course",
+            "description": "Cutting-edge website for an import expert featuring import course information.",
+            "image": "images/import.webp",
+            "technologies": [
+                "HTML5",
+                "CSS3",
+                "JavaScript"
+            ],
+            "url": "https://importaygana.com/",
+            "completionDate": "2025-04-28"
+        }
+    ],
+    "testimonials": [
+        {
+            "id": "testimonial-1",
+            "name": "Iris Silva",
+            "company": "Global Logistics",
+            "position": "Owner",
+            "content": "Azzelera transformed our online presence completely. Our website is beautiful, functional, and has significantly increased our orders. The team was professional and delivered exactly what we needed.",
+            "rating": 5,
+            "image": "images/iris.webp",
+            "date": "2024-02-01"
+        },
+        {
+            "id": "testimonial-2",
+            "name": "Carla Martinez",
+            "company": "Eco Baby",
+            "position": "Manager",
+            "content": "The website Azzelera created for us is fantastic. Our new e-commerce site is user-friendly, secure, and has tripled our online sales. The support team is always there when we need them.",
+            "rating": 5,
+            "image": "images/carla.webp",
+            "date": "2024-03-15"
+        },
+        {
+            "id": "testimonial-3",
+            "name": "Luis Olivares",
+            "company": "Importa y Gana",
+            "position": "Founder",
+            "content": "Working with Azzelera was a game-changer for our business. Our members love the new site and the clean, modern design perfectly represents our brand. Highly recommended!",
+            "rating": 5,
+            "image": "images/luis.webp",
+            "date": "2024-04-02"
+        }
+    ],
+    "pricingPlans": [
+        {
+            "id": "starter",
+            "name": "Starter",
+            "description": "Perfect for small businesses just starting their online journey",
+            "price": {
+                "amount": 249,
+                "currency": "USD",
+                "display": "$249"
+            },
+            "popular": false,
+            "features": [
+                "Up to 5 pages",
+                "Mobile responsive design",
+                "Basic SEO optimization",
+                "Contact form",
+                "Social media integration",
+                "1 month free support",
+                "SSL certificate",
+                "Basic analytics setup"
+            ],
+            "buttonText": "Start with Starter"
+        },
+        {
+            "id": "professional",
+            "name": "Professional",
+            "description": "Ideal for growing businesses that need advanced features",
+            "price": {
+                "amount": 490,
+                "currency": "USD",
+                "display": "$490"
+            },
+            "popular": true,
+            "features": [
+                "Up to 15 pages",
+                "Advanced custom design",
+                "Advanced SEO optimization",
+                "Multiple contact forms",
+                "E-commerce ready (up to 50 products)",
+                "Blog functionality",
+                "3 months free support",
+                "Advanced analytics",
+                "Performance optimization",
+                "Content management system"
+            ],
+            "buttonText": "Choose Professional"
+        },
+        {
+            "id": "enterprise",
+            "name": "Enterprise",
+            "description": "Complete solution for established businesses with complex needs",
+            "price": {
+                "amount": 799,
+                "currency": "USD",
+                "display": "$799"
+            },
+            "popular": false,
+            "features": [
+                "Unlimited pages",
+                "Custom functionality",
+                "Advanced e-commerce (unlimited products)",
+                "User account system",
+                "Advanced integrations",
+                "Priority support",
+                "6 months free support",
+                "Custom reporting",
+                "Multi-language support",
+                "Advanced security features",
+                "Database integration",
+                "API development"
+            ],
+            "buttonText": "Go Enterprise"
+        }
+    ],
+    "additionalServices": [
+        {
+            "id": "logo-design",
+            "name": "Logo Design",
+            "description": "Professional logo design that represents your brand identity",
+            "price": {
+                "amount": 99,
+                "currency": "USD",
+                "display": "$99"
+            },
+            "duration": "1-2 weeks",
+            "features": [
+                "3 concept designs",
+                "Unlimited revisions",
+                "All file formats",
+                "Brand guidelines"
+            ]
+        },
+        {
+            "id": "content-writing",
+            "name": "Content Writing",
+            "description": "Professional copywriting for your website pages",
+            "price": {
+                "amount": 99,
+                "currency": "USD",
+                "display": "$99"
+            },
+            "duration": "1 week",
+            "features": [
+                "SEO optimized",
+                "Engaging copy",
+                "Up to 5 pages",
+                "Keyword research"
+            ]
+        },
+        {
+            "id": "social-media",
+            "name": "Social Media Setup",
+            "description": "Complete social media profile setup and integration",
+            "price": {
+                "amount": 99,
+                "currency": "USD",
+                "display": "$99"
+            },
+            "duration": "3-5 days",
+            "features": [
+                "Profile optimization",
+                "Brand consistency",
+                "Content calendar",
+                "Integration setup"
+            ]
+        }
+    ],
+    "faq": [
+        {
+            "id": "faq-1",
+            "question": "How long does it take to build a website?",
+            "answer": "The timeline depends on the complexity of your project. A basic website typically takes 2-3 weeks, while more complex sites with custom features can take 4-8 weeks. We'll provide you with a detailed timeline during our initial consultation."
+        },
+        {
+            "id": "faq-2",
+            "question": "Do you provide ongoing support after launch?",
+            "answer": "Yes! All our packages include free support for the first month. After that, we offer various maintenance packages to keep your website updated, secure, and performing optimally. We're always here to help with any questions or updates you need."
+        },
+        {
+            "id": "faq-3",
+            "question": "Will my website work on mobile devices?",
+            "answer": "Absolutely! All websites we create are fully responsive, meaning they automatically adapt to work perfectly on smartphones, tablets, and desktop computers. Mobile-friendly design is standard in all our packages."
+        },
+        {
+            "id": "faq-4",
+            "question": "Can I update the website content myself?",
+            "answer": "Yes, we build most websites with user-friendly content management systems that allow you to easily update text, images, and other content. We also provide training on how to use these tools effectively."
+        },
+        {
+            "id": "faq-5",
+            "question": "What if I need changes after the website is complete?",
+            "answer": "We include minor revisions in our packages, and we're always available for additional updates. We offer flexible maintenance packages and can discuss ongoing support options based on your specific needs."
+        },
+        {
+            "id": "faq-6",
+            "question": "Do you help with domain and hosting?",
+            "answer": "Yes, we can help you choose and register a domain name, and we can recommend reliable hosting providers. We can also handle the technical setup to ensure your website launches smoothly."
+        },
+        {
+            "id": "faq-7",
+            "question": "What makes Azzelera different from other web design companies?",
+            "answer": "We specialize in working with small businesses and understand your unique challenges and budget constraints. We focus on creating websites that not only look great but also help you achieve your business goals. Our personalized approach ensures you get exactly what you need."
+        },
+        {
+            "id": "faq-8",
+            "question": "Can you help improve my existing website?",
+            "answer": "Absolutely! We offer website redesign and improvement services. We can update your design, improve functionality, enhance SEO, or add new features to your existing site. Contact us to discuss your specific needs."
+        }
+    ],
+    "contactMethods": [
+        {
+            "id": "email",
+            "type": "Email",
+            "value": "info@azzelera.com",
+            "icon": "📧",
+            "description": "Send us an email anytime",
+            "responseTime": "2-4 hours"
+        },
+        {
+            "id": "phone",
+            "type": "Phone",
+            "value": "+51 1 234-5678",
+            "icon": "📞",
+            "description": "Call us during business hours",
+            "responseTime": "Immediate"
+        },
+        {
+            "id": "whatsapp",
+            "type": "WhatsApp",
+            "value": "+51 987 654 321",
+            "icon": "💬",
+            "description": "Message us on WhatsApp",
+            "responseTime": "Within 1 hour"
+        }
+    ],
+    "processSteps": [
+        {
+            "id": "step-1",
+            "number": 1,
+            "title": "Initial Review",
+            "description": "We carefully analyze your requirements and business goals",
+            "duration": "Within 2 hours",
+            "icon": "🔍"
+        },
+        {
+            "id": "step-2",
+            "number": 2,
+            "title": "Consultation Call",
+            "description": "We discuss your project in detail and answer any questions",
+            "duration": "2-4 hours",
+            "icon": "📞"
+        },
+        {
+            "id": "step-3",
+            "number": 3,
+            "title": "Custom Proposal",
+            "description": "You receive a detailed proposal with timeline and pricing",
+            "duration": "1-2 business days",
+            "icon": "📋"
+        },
+        {
+            "id": "step-4",
+            "number": 4,
+            "title": "Project Kickoff",
+            "description": "We begin working on your project once approved",
+            "duration": "Upon approval",
+            "icon": "🚀"
+        }
+    ]
+}
