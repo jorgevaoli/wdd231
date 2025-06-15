@@ -92,6 +92,10 @@ p {
     gap: 2rem;
 }
 
+.nav-item {
+    list-style: none;
+}
+
 .nav-link {
     text-decoration: none;
     color: #2e3741;
@@ -157,17 +161,21 @@ main {
 }
 
 /* Buttons */
-.cta-button {
+.cta-button,
+.secondary-button {
     display: inline-block;
-    background-color: #2568ef;
-    color: #ffffff;
     padding: 12px 30px;
     text-decoration: none;
     border-radius: 5px;
     font-weight: 600;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
     border: none;
     cursor: pointer;
+}
+
+.cta-button {
+    background-color: #2568ef;
+    color: #ffffff;
 }
 
 .cta-button:hover {
@@ -175,16 +183,9 @@ main {
 }
 
 .secondary-button {
-    display: inline-block;
     background-color: transparent;
     color: #2568ef;
-    padding: 12px 30px;
-    text-decoration: none;
     border: 2px solid #2568ef;
-    border-radius: 5px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    cursor: pointer;
 }
 
 .secondary-button:hover {
@@ -214,24 +215,60 @@ section h2 {
     color: #2e3741;
 }
 
+.services {
+    background-color: #ffffff;
+}
+
+.projects {
+    background-color: #ffffff;
+}
+
+.process {
+    background-color: #ffffff;
+}
+
 /* Services Grid */
-.services-grid {
+.services-grid,
+.projects-grid,
+.testimonials-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
 
-.service-card {
+.services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.testimonials-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* Cards - Base shared*/
+.service-card,
+.project-card,
+.testimonial-card {
     background: #ffffff;
-    border: 1px solid #edf4ff;
     border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover,
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card {
+    border: 1px solid #edf4ff;
     padding: 2rem;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: none;
 }
 
 .service-card:hover {
-    transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(37, 104, 239, 0.1);
 }
 
@@ -278,23 +315,11 @@ section h2 {
     background-color: #e8890f;
 }
 
-/* Projects Grid */
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
-}
-
+/* Projects */
 .project-card {
-    background: #ffffff;
-    border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
+    padding: 0;
 }
 
 .project-image img {
@@ -350,16 +375,8 @@ section h2 {
     background-color: #edf4ff;
 }
 
-.testimonials-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
 .testimonial-card {
-    background: #ffffff;
     padding: 2rem;
-    border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -509,7 +526,8 @@ section h2 {
     left: 0;
 }
 
-.plan-btn {
+.plan-btn,
+.submit-button {
     width: 100%;
     background-color: #2568ef;
     color: #ffffff;
@@ -521,8 +539,13 @@ section h2 {
     transition: background-color 0.3s ease;
 }
 
-.plan-btn:hover {
+.plan-btn:hover,
+.submit-button:hover {
     background-color: #1e56d8;
+}
+
+.submit-button {
+    font-size: 1.1rem;
 }
 
 .plan-details {
@@ -688,23 +711,6 @@ section h2 {
 
 .checkbox-group input[type="checkbox"] {
     width: auto;
-}
-
-.submit-button {
-    width: 100%;
-    background-color: #2568ef;
-    color: #ffffff;
-    border: none;
-    padding: 15px;
-    border-radius: 5px;
-    font-weight: 600;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.submit-button:hover {
-    background-color: #1e56d8;
 }
 
 .form-group.error input,
